@@ -1,0 +1,45 @@
+<div class="color">
+    <div class="container">
+        <mat-card>
+          <mat-card-content>
+            <h1>Add an employee</h1>
+            <br />
+            <form>
+              <br />
+              <label for="employeeName">Name:</label><br />
+              <mat-form-field>
+                <input
+                  matInput
+                  name="employeeName"
+                  placeholder="Introduce the name"
+                  required
+                  minlength="6"
+                  [(ngModel)]="name"
+                  [ngModelOptions]="{ standalone: true }"
+                />
+              </mat-form-field>
+              <br />
+              <br />
+              <label for="employeeRole">Role:</label><br /><br />
+              <mat-form-field>
+                <textarea
+                  matInput
+                  name="employeeRole"
+                  placeholder="enter a Role"
+                  required
+                  minlength="5"
+                  [(ngModel)]="role"
+                  [ngModelOptions]="{ standalone: true }"
+                ></textarea>
+              </mat-form-field>
+      
+              <br />
+              <br />
+              <br />
+              <button mat-button (click)="addNewEmployee()">Add</button>
+            </form>
+          </mat-card-content>
+        </mat-card>
+      </div>
+</div>
+

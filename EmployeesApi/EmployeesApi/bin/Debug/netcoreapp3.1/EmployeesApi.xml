@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>EmployeesApi</name>
+    </assembly>
+    <members>
+        <member name="T:EmployeesApi.Controllers.EmployeesController">
+            <summary>
+            Defines the <see cref="T:EmployeesApi.Controllers.EmployeesController" />.
+            </summary>
+        </member>
+        <member name="F:EmployeesApi.Controllers.EmployeesController._employeeCollectionService">
+            <summary>
+            Defines the _employeeCollectionService.
+            </summary>
+        </member>
+        <member name="M:EmployeesApi.Controllers.EmployeesController.#ctor(EmployeesApi.Services.IEmployeeCollectionService)">
+            <summary>
+            Initializes a new instance of the <see cref="T:EmployeesApi.Controllers.EmployeesController"/> class.
+            </summary>
+            <param name="employeeCollectionService">The employeeCollectionService<see cref="T:EmployeesApi.Services.IEmployeeCollectionService"/>.</param>
+        </member>
+        <member name="M:EmployeesApi.Controllers.EmployeesController.GetEmployees">
+            <summary>
+            The GetEmployees.
+            </summary>
+            <returns>The <see cref="T:System.Threading.Tasks.Task`1"/>.</returns>
+        </member>
+        <member name="M:EmployeesApi.Controllers.EmployeesController.CreateEmployee(EmployeesApi.Models.Employee)">
+            <summary>
+            The CreateEmployee.
+            </summary>
+            <param name="employee">The employee<see cref="T:EmployeesApi.Models.Employee"/>.</param>
+            <returns>The <see cref="T:System.Threading.Tasks.Task`1"/>.</returns>
+        </member>
+        <member name="M:EmployeesApi.Controllers.EmployeesController.UpdateEmployee(System.Guid,EmployeesApi.Models.Employee)">
+            <summary>
+            The UpdateEmployee.
+            </summary>
+            <param name="id">The id<see cref="T:System.Guid"/>.</param>
+            <param name="employee">The employee<see cref="T:EmployeesApi.Models.Employee"/>.</param>
+            <returns>The <see cref="T:System.Threading.Tasks.Task`1"/>.</returns>
+        </member>
+        <member name="M:EmployeesApi.Controllers.EmployeesController.DeleteEmployee(System.Guid)">
+            <summary>
+            The DeleteEmployee.
+            </summary>
+            <param name="id">The id<see cref="T:System.Guid"/>.</param>
+            <returns>The <see cref="T:System.Threading.Tasks.Task`1"/>.</returns>
+        </member>
+        <member name="M:EmployeesApi.Controllers.EmployeesController.GetEmployeeByTeamLeaderId(System.Guid)">
+            <summary>
+            The GetEmployeeByTeamLeaderId.
+            </summary>
+            <param name="teamLeaderId">The teamLeaderId<see cref="T:System.Guid"/>.</param>
+            <returns>The <see cref="T:System.Threading.Tasks.Task`1"/>.</returns>
+        </member>
+    </members>
+</doc>

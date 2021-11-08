@@ -1,0 +1,37 @@
+<p>
+  <mat-toolbar class="toolbar">
+    <span>EmployeesApp</span>
+  </mat-toolbar>
+</p>
+
+<h1>List of employees:</h1>
+
+<!-- <div class="sort-container">
+    <div class="sort-div">
+        <button mat-raised-button color="primary" (click)="sortAscending()" >Ascending</button>
+        <button mat-raised-button color="primary" (click)=" sortDescending()">Descending</button>
+    </div>
+</div> -->
+
+<div class="employee-container">
+  <div class="card" *ngFor="let employee of employees">
+    <mat-card class="employee-card">
+      <mat-card-header class="card-header">
+        Name: {{ employee.name }}
+      </mat-card-header>
+      <mat-card-content> <b>Role:</b> {{ employee.role }} </mat-card-content>
+
+      <mat-card-footer class="buttons-container">
+        <div class="delete-btn">
+          <button
+            mat-icon-button
+            aria-label="Example icon button with a delete icon"
+            (click)="deleteEmployee(employee.id)"
+          >
+            <mat-icon>delete</mat-icon>
+          </button>
+        </div>
+      </mat-card-footer>
+    </mat-card>
+  </div>
+</div>
